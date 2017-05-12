@@ -2,18 +2,7 @@ var fs = require("fs");
 
 // Create the base directory to hold all the jsons
 var jSONDirExists = true;
-var population2010=0;
-    var population2011=0;
-    var population2012=0;
-    var population2013=0;
-    var pp2010=0;
-    var pp2011=0;
-    var pp2012=0;
-    var pp2013=0;
-    var gdp2010=0;
-    var gdp2011=0;
-    var gdp2012=0;
-    var gdp2013=0;
+
 
 // Save the continent names in a JSON
 createContinentsJSON();
@@ -119,18 +108,7 @@ function createJSONFromFile( file ) {
     }
   }
 
-     population2010=processedData.indexOf("population2010");
-     population2011=processedData.indexOf("population2011");
-     population2012=processedData.indexOf("population2012");
-     population2013=processedData.indexOf("population2013");
-     pp2010=processedData.indexOf("pp2010");
-     pp2011=processedData.indexOf("pp2011");
-     pp2012=processedData.indexOf("pp2012");
-     pp2013=processedData.indexOf("pp2013");
-     gdp2010=processedData.indexOf("gdp2010");
-     gdp2011=processedData.indexOf("gdp2011");
-     gdp2012=processedData.indexOf("gdp2012");
-     gdp2013=processedData.indexOf("gdp2013");
+ 
 
 
   // Create the graph specific JSONs

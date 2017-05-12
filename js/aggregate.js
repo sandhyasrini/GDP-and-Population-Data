@@ -15,7 +15,7 @@ var svg6 = d3.select("#graphWrap6").append("svg")
 svg6.call( continentsPopTip );
 svg6.call( continentGDPTip );
 
-d3.json("/home/user/workspace/datamunging-boilerplate/output/countriesAndContinents.json", function( countriesAndContinents ) {
+d3.json("./output/countriesAndContinents.json", function( countriesAndContinents ) {
 
   var noOfCountries = countriesAndContinents.length;
   // To get continents array
@@ -52,7 +52,7 @@ d3.json("/home/user/workspace/datamunging-boilerplate/output/countriesAndContine
   }
 
   // To read the graph 1 JSON
-  d3.json("/home/user/workspace/datamunging-boilerplate/output/continent_wise_graph.json",function( data ) {
+  d3.json("./output/continent_wise_graph.json",function( data ) {
 
     // Filtering the parsed data to get the plotting data
     var initialPlottingData = data.filter( function( countryDetails ) {

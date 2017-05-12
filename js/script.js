@@ -113,7 +113,7 @@ var svg1 = d3.select("#graphWrap1").append("svg")
 
 svg1.call(populationTip);
 
-d3.json("/home/user/workspace/datamunging-boilerplate/output/countriesAndContinents.json", function( countriesAndContinents ) {
+d3.json("./output/countriesAndContinents.json", function( countriesAndContinents ) {
 
   var noOfCountries = countriesAndContinents.length;
   // Function to check whether an entry is a country
@@ -127,7 +127,7 @@ d3.json("/home/user/workspace/datamunging-boilerplate/output/countriesAndContine
 
 
   // To read the graph 1 JSON
-  d3.json("/home/user/workspace/datamunging-boilerplate/output/graph123.json",function( data ) {
+  d3.json("./output/graph123.json",function( data ) {
 
     // Filtering the parsed data to get the plotting data
     var plottingData = data.filter(function( countryDetails ) {

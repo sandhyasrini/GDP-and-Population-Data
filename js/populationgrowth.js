@@ -19,7 +19,7 @@ svg4.call( growthPop2012Tip );
 svg4.call( growthPop2013Tip );
 
 
-d3.json("/home/user/workspace/datamunging-boilerplate/output/countriesAndContinents.json", function( countriesAndContinents ) {
+d3.json("./output/countriesAndContinents.json", function( countriesAndContinents ) {
 
   var noOfCountries = countriesAndContinents.length;
   // Function to check whether an entry is a country
@@ -33,7 +33,7 @@ d3.json("/home/user/workspace/datamunging-boilerplate/output/countriesAndContine
 
 
   // To read the graph 1 JSON
-  d3.json("/home/user/workspace/datamunging-boilerplate/output/pop_pp_growth_graph.json",function( data ) {
+  d3.json("./output/pop_pp_growth_graph.json",function( data ) {
 
     // Filtering the parsed data to get the plotting data
     var initialPlottingData = data.filter(function( countryDetails ) {
