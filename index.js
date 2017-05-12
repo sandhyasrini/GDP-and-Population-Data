@@ -11,7 +11,7 @@ createContinentsJSON();
 createCountriesAndContinentJSON();
 
 // function call to create the JSON String representation of the data
-createJSONFromFile( '/home/user/workspace/datamunging-boilerplate/data/population.csv' );  // accepts the raw content's file path
+createJSONFromFile( './population.csv' );  // accepts the raw content's file path
 
 // Function to create JSON for Graph 1,2,3
 function createJSONForGraph123( processedData ) {
@@ -108,7 +108,7 @@ function createJSONFromFile( file ) {
     }
   }
 
- 
+
 
 
   // Create the graph specific JSONs
